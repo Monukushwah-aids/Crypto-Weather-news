@@ -13,7 +13,7 @@ export default function CryptoNews() {
       .then((response) => response.json())
       .then((data) => {
         if (data.results && Array.isArray(data.results)) {
-          setNews(data.results.slice(0, 10)); // Get top 5 crypto news
+          setNews(data.results.slice(0, 10)); 
         } else {
           setError('No crypto news found');
         }

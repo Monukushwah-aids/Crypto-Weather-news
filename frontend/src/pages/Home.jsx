@@ -1,22 +1,20 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom"
 import video from '../Images/video.mp4'
- 
 
 const HomePage = () => {
   const [activeButton, setActiveButton] = useState(null);
-  const [currency, setCurrency] = useState("usd");
-
-  const handleCurrencyChange = (e) => {
-    setCurrency(e.target.value);
-  };
+  
+  
 
   return (
     <div class="main">
             <div class="overlay"></div>
             <video className="object-fill" src={video} autoPlay loop muted/>
+           
       <nav className="w-full flex justify-between items-center px-8 py-4 bg-gray-800 shadow-lg fixed top-0 left-0 z-20">
-        <h1 className="text-2xl font-bold text-white">Crypto Weahter News</h1>
+     
+        <h1 className="text-2xl font-bold text-white ">Crypto Weahter News</h1>
         
         <div>
          
